@@ -45,6 +45,6 @@ for url1 in url1:
     print(filename)
     req = request.urlopen(req)
     print(req)
-    with open("./wzq/" + filename, 'wb') as f:
+    with open("./data/" + filename, 'wb') as f:
         f.write(req.read())
     f.close()
